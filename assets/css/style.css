@@ -13,8 +13,13 @@ h1 {
 	color: white;
 	font-family: "Noto Serif", serif;
 	position: absolute;
-	left: 40px;
+	left: 0px;
 	top: 30px;
+}
+
+h2, p {
+	color: white;
+	font-family: "Roboto", sans-serif;
 }
 
 /* Header */
@@ -24,4 +29,7 @@ header {
 	background-position: center;
 	height: 365px;
 	position: relative;
+}
+
+section {
 }
