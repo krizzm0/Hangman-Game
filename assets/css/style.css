@@ -1,0 +1,15 @@
+body {
+	background-color: #000;
+}
+
+header {
+	background-image: url("../images/banner.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 365px;
+}
+
+.container {
+	max-width: 852px;
+	margin: auto;
+}
