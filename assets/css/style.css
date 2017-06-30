@@ -52,3 +52,14 @@ section {
 }
 
 /* Space for Letters Guessed */
+#lettersGuessed {
+	margin-bottom: 30px;
+	border: 1px solid white;
+}
+
+/* Footer */
+footer {
+	text-align: center;
+	font-size: 10px;
+	border: 1px solid white;
+}
