@@ -1,15 +1,27 @@
+/* General */
 body {
 	background-color: #000;
-}
-
-header {
-	background-image: url("../images/banner.jpg");
-	background-repeat: no-repeat;
-	background-position: center;
-	height: 365px;
 }
 
 .container {
 	max-width: 852px;
 	margin: auto;
+}
+
+h1 {
+	font-size: 30px;
+	color: white;
+	font-family: "Noto Serif", serif;
+	position: absolute;
+	left: 40px;
+	top: 30px;
+}
+
+/* Header */
+header {
+	background-image: url("../images/banner.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 365px;
+	position: relative;
 }
