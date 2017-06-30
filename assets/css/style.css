@@ -13,7 +13,6 @@ h1 {
 	color: white;
 	font-family: "Noto Serif", serif;
 	position: absolute;
-	left: 0px;
 	top: 30px;
 }
 
@@ -32,4 +31,15 @@ header {
 }
 
 section {
+}
+
+#instruction {
+	text-align: center;
+}
+
+/* Score Box */
+#scoreBox {
+	position: absolute;
+	bottom: 23px;
+	font-size: 13px;
 }
