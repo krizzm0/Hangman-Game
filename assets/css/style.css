@@ -43,3 +43,12 @@ section {
 	bottom: 23px;
 	font-size: 13px;
 }
+
+/* Space for Hangman Word */
+#blank {
+	border: 1px solid white;
+	height: 100px;
+	margin: 20px 0;
+}
+
+/* Space for Letters Guessed */
