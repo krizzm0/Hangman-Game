@@ -1,3 +1,4 @@
+// Array of Chemical Engineering Hangman Words
 var hangmanWords = [
 	"fugacity",
 	"thermodynamics",
@@ -15,10 +16,13 @@ function randomWordSelector() {
 	var randomWord = hangmanWords[randomArrayIndex];
 	// Deletes word from Array
 	hangmanWords.splice(randomArrayIndex, 1);
+
+	return randomWord;
 }
 
 // Adding Random Word to HTML
 function IDK() {
-	document.getElementById("blank").textContent = randomWord;
-	
+	document.getElementById("blank").textContent = randomWordSelector();
 }
+
+// IDK();
