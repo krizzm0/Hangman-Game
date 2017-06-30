@@ -51,6 +51,13 @@ section {
 	margin: 20px 0;
 }
 
+#word {
+	font-size: 60px;
+	text-align: center;
+	letter-spacing: 20px;
+	line-height: 100px;
+}
+
 /* Space for Letters Guessed */
 #lettersGuessed {
 	margin-bottom: 30px;

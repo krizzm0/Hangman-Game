@@ -10,19 +10,25 @@ var hangmanWords = [
 	"kelvin"
 ];
 
-// Random Hangman Word Selector
+// Random Hangman Word Selector Function
 function randomWordSelector() {
 	var randomArrayIndex = Math.floor(Math.random()*hangmanWords.length);
 	var randomWord = hangmanWords[randomArrayIndex];
 	// Deletes word from Array
 	hangmanWords.splice(randomArrayIndex, 1);
 
-	return randomWord;
+	return randomWord
 }
 
-// Adding Random Word to HTML
-function IDK() {
-	document.getElementById("blank").textContent = randomWordSelector();
-}
+var randomWord = randomWordSelector();
 
-// IDK();
+// Outputs Random Word Out To HTML
+function span() {
+	var wordLength = randomWord.length;
+	var paragraph = document.getElementById("word");
+
+	for (var i = 0; i < wordLength; i++) {
+		paragraph.innerHTML += "<span class='letters'>" + randomWord.charAt(i) + "</span>";
+	}
+}
+span();
