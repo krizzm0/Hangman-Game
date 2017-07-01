@@ -20,15 +20,15 @@ function randomWordSelector() {
 	return randomWord
 }
 
-var randomWord = randomWordSelector();
-
 // Outputs Random Word Out To HTML
 function span() {
 	var wordLength = randomWord.length;
 	var paragraph = document.getElementById("word");
 
 	for (var i = 0; i < wordLength; i++) {
-		paragraph.innerHTML += "<span class='letters'>" + randomWord.charAt(i) + "</span>";
+		paragraph.innerHTML += "<span class='letters' id='s" + (i+1) + "'>" + "</span>";
 	}
 }
+
+var randomWord = randomWordSelector();
 span();
