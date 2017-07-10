@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+cd<!DOCTYPE html>
 <html lang="en-us">
 
 <head>
@@ -16,19 +16,20 @@
 		<div id="scoreBox">
 			<p>Wins: <span id="wins"></span></p>
 			<p>Loss: <span id="loss"></span></p>
-			<p>Score: <span id="score"></span></p>
+			<p>Score: <span id="score">0%</span></p>
+			<p>Guesses left: <span id="guesses">8</span></p>
 		</div>
 	</header>
 
 	<section class="container">
-		<h2 id="instruction">Press any key to start guessing the letters!</h2>
+		<h2 id="instruction">Press any letter to start guessing!</h2>
 
 		<div id="blank">
 			<p id="underlineLetter"></p>
-			<p>Guesses left: <span id="guesses">8</span></p>
+			<p id="dialogue"></p>
 		</div>
 
-		<h2>Letters Guessed:</h2>
+		<!-- <h2>Letters Guessed:</h2> -->
 		<div id="lettersGuessedSection"></div>
 	</section>
 
