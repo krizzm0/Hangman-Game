@@ -112,7 +112,7 @@ function scoreTracker() {
 	}
 
 	if (counterTillGameOver.length === 9) {
-		alert("Game Over. Your score is " + ((wins / (wins + loss)) * 100) + "%. Do you want to play again?");
+		alert("Game Over. Your score is " + ((wins / (wins + loss)) * 100) + "%.");
 		location.reload();
 	}
 }
