@@ -29,6 +29,7 @@ function randomWordSelector() {
 	var hangmanWord = hangmanWords[randomArrayIndex];
 	// Removes word from Hangman Words Array
 	hangmanWords.splice(randomArrayIndex, 1);
+	counterTillGameOver.push(1);
 	return hangmanWord;
 }
 
@@ -97,6 +98,7 @@ function scoreTracker() {
 		updateGuessesLeft();
 		updateWinsLoss();
 		updateScore();
+
 	}
 	// If user was able to guess word, user wins
 	if (numOfCorrectLetters === hangmanWord.length) {
@@ -106,6 +108,12 @@ function scoreTracker() {
 		WrongLetterArray = [];
 		waitingForEnter = true;
 		document.getElementById("dialogue").innerHTML = "Congratulations, you got the word!!</p><p>Press ENTER to conintue.</p>";
+
+	}
+
+	if (counterTillGameOver.length === 9) {
+		alert("Game Over. Your score is " + ((wins / (wins + loss)) * 100) + "%. Do you want to play again?");
+		location.reload();
 	}
 }
 // ==========================================================================================
@@ -123,6 +131,7 @@ var hangmanWords = [
 	"ionization",
 	"joule",
 	"kelvin" ];
+var counterTillGameOver = [];
 
 var alphabetLetters = [
 	"a", "b", "c", "d", "e", "f", "g",
@@ -146,7 +155,7 @@ document.onkeyup = function letterCheck(event) {
 	var guessedLetter = event.key;
 	for (var t = 0; t < alphabetLetters.length; t++) {
 		if ( (event.key.toLowerCase() === alphabetLetters[t]) && (waitingForEnter === false) ) {
-			document.getElementById("instruction").innerHTML = "";
+			document.getElementById("instruction").innerHTML = " ";
 			// Checks to see if guessed letter has already been guessed
 			for (var y = 0; y < everyGuessedLetter.length; y++) {
 				// If already guessed, do nothing
